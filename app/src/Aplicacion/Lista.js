@@ -37,7 +37,7 @@ function Lista() {
                         ))}
                     </tr>
                 </tbody>
-            </table>F
+            </table>
         </div>
     )
 }
