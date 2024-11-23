@@ -1,0 +1,33 @@
+#liena {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 70px;
+    color: rgb(110, 154, 207);
+}
+
+#pizz{
+    width: 300px;
+}
+
+#img-piza{
+    width: 250px;
+}
+
+#img-rufles{
+    width: 400px;
+}
+
+
+div {
+    margin: 0;
+    padding: auto;
+}
+
+/* table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid #000;
+} */
