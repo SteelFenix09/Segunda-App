@@ -6,12 +6,23 @@ const app = express()
 const port = 3001
 
 
+
 const buildPath = path.join(__dirname, '..', 'app', 'build')
 
 const productos = [
-    { id: 1, nombre: "Doritos", imagen: "/img/Sabritas/Pizee.png" },
-    { id: 2, nombre: "Rufles", imagen: "/img/Sabritas/Rufles.png" },
-    { id: 3, nombre: "Chetos", imagen: "/img/Sabritas/torci.png" }
+    { id: 1, nombre: "Doritos", imagen: "/img/Sabritas/Pizee.png",direccion:"/direccion", infoTabla:"hola", recomendacion: {
+        info1: "Es fácil dejarse llevar por el sabor, pero intenta controlar las porciones para evitar un consumo excesivo de grasas y sodio.",
+        info2: "Inclúyelas en una dieta variada y equilibrada, combinándolas con frutas, verduras y proteínas.",
+        info3: "Antes de consumirlas, revisa la información nutricional para conocer el contenido de calorías, grasas, sodio y otros nutrientes."
+    } },
+    { id: 2, nombre: "Rufles", imagen: "/img/Sabritas/Rufles.png",direccion: "/direccion",recomendacion: {
+        info1: "Es fácil dejarse llevar por el sabor, pero intenta controlar las porciones para evitar un consumo excesivo de grasas y sodio.",
+        info2: "Inclúyelas en una dieta variada y equilibrada, combinándolas con frutas, verduras y proteínas.",
+        info3: "Antes de consumirlas, revisa la información nutricional para conocer el contenido de calorías, grasas, sodio y otros nutrientes."} },
+    { id: 3, nombre: "Chetos", imagen: "/img/Sabritas/torci.png", direccion: "/direccion", recomendacion: {
+        info1: "Es fácil dejarse llevar por el sabor, pero intenta controlar las porciones para evitar un consumo excesivo de grasas y sodio.",
+        info2: "Inclúyelas en una dieta variada y equilibrada, combinándolas con frutas, verduras y proteínas.",
+        info3: "Antes de consumirlas, revisa la información nutricional para conocer el contenido de calorías, grasas, sodio y otros nutrientes."} }
 ]
 
 app.use(express.static(buildPath))

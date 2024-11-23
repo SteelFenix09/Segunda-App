@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 function Sabrita() {
 
@@ -21,9 +22,7 @@ function Sabrita() {
     return (
         <div>
             <table>
-
                 <tbody>
-
                     <tr>
                         {proyectos.map((pro, index)=>(
                             <td key={pro.id}> <img src={pro.imagen} alt={pro.nombre} ></img> </td>
@@ -32,6 +31,11 @@ function Sabrita() {
                     <tr>
                         {proyectos.map((pro, index)=>(
                             <td key={pro.id}> {pro.nombre} </td>
+                        ))}
+                    </tr>
+                    <tr>
+                        {proyectos.map((pro, index)=>(
+                            <td key={pro.id}> <Link to={pro.direccion}> Mas informacion </Link> </td>
                         ))}
                     </tr>
                 </tbody>
