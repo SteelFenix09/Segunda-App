@@ -12,7 +12,7 @@ function Rutas() {
             <Routes>
                 <Route path='/sabrita' element={< Sabrita/>} />
                 <Route path='/lista' element={<Lista/>}/>
-                <Route path='/direccion' element={<Contenido/>}/>
+                <Route path='/producto/:id' element={<Contenido/>}/>
             </Routes>
         </div>
     )

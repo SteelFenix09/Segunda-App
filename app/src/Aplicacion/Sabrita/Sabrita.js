@@ -35,7 +35,7 @@ function Sabrita() {
                     </tr>
                     <tr>
                         {proyectos.map((pro, index)=>(
-                            <td key={pro.id}> <Link to={pro.direccion}> Mas informacion </Link> </td>
+                            <td key={pro.id}  > <Link to={`/producto/${pro.id}`} > Mas informacion </Link> </td>
                         ))}
                     </tr>
                 </tbody>

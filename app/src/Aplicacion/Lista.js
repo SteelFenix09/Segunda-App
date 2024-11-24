@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Lista() {
     const [productos, setProyectos] = useState([])
@@ -34,6 +35,11 @@ function Lista() {
                     <tr>
                         {elFiltro.map((pro) => (
                             <td key={pro.id}> {pro.nombre} </td>
+                        ))}
+                    </tr>
+                    <tr>
+                        {elFiltro.map((pro, index)=>(
+                            <td key={pro.id}  > <Link to={`/producto/${pro.id}`} > Mas informacion </Link> </td>
                         ))}
                     </tr>
                 </tbody>
