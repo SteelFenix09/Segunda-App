@@ -57,6 +57,11 @@ function Menu() {
                                                 <strong>Galletas</strong>
                                             </Link>
                                         </li>
+                                        <li>
+                                            <Link className="dropdown-item text-center" to="/editar">
+                                                <strong>Editar</strong>
+                                            </Link>
+                                        </li>
                                     </ul>
 
                                 </ul>
