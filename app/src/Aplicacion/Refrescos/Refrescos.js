@@ -2,49 +2,48 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-function Sabrita() {
+function Refrescos() {
 
-    const [cacha, setProyectos] = useState([])
+    const [sobres, setSobres] = useState([])
 
     useEffect(() => {
-        const obtenerSabrita = async () => {
+        const obtenerRefresco = async () => {
             try {
                 const responde = await axios.get('/proyectos');
-                setProyectos(responde.data);
+                setSobres(responde.data)
             } catch (error) {
                 console.error('Error al obtener datos', error);
 
-            } 
+            }
         }
-        obtenerSabrita();
+        obtenerRefresco()
     }, [])
 
-    const proyectos = cacha.filter(pro => pro.id <= 3)
-
+    const refresco = sobres.filter(pro => pro.id >= 4 && pro.id <= 6)
 
     return (
         <div>
             <table>
                 <tbody>
                     <tr>
-                        {proyectos.map((pro, index)=>(
+                        {refresco.map((pro, index) => (
                             <td key={pro.id}> <img src={pro.imagen} alt={pro.nombre} ></img> </td>
                         ))}
                     </tr>
                     <tr>
-                        {proyectos.map((pro, index)=>(
+                        {refresco.map((pro, index) => (
                             <td key={pro.id}> {pro.nombre} </td>
                         ))}
                     </tr>
                     <tr>
-                        {proyectos.map((pro, index)=>(
+                        {refresco.map((pro, index) => (
                             <td key={pro.id}  > <Link to={`/producto/${pro.id}`} > Mas informacion </Link> </td>
                         ))}
                     </tr>
                 </tbody>
             </table>
         </div>
-    );
+    )
 }
 
-export default Sabrita
+export default Refrescos

@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
+import './contenido.css'
+
 function Contenido() {
     const { id } = useParams();
 
@@ -23,39 +25,33 @@ function Contenido() {
     return (
         <div>
             <table>
-                <tr>Tabla y recomendaciones</tr>
+                <tr> Tabla y recomendaciones </tr>
                 <tbody>
                     <tr>
-                        <td rowSpan={22}>
-                            <img src={proyectos.imagen} alt={proyectos.nombre} /> {/* Accede a la propiedad imagen */}
-                        </td>
-                        <td colSpan={3}>informacion Nutricional</td>
-                        <td colSpan={7}> <Link to="/sabrita">Regresar</Link> </td>
+                        <td> Imagen </td>
+                        <td>Tabla Nutricional</td>
+                        <td> <Link to={proyectos.direccion} >Regresar</Link> </td>
                     </tr>
                     <tr>
-                        <td>{proyectos.infoTabla}</td> 
+                        <td rowSpan={4}> <img src={proyectos.im} alt={proyectos.nombre} ></img> </td>
+                        <td rowSpan={4}> <img src={proyectos.infoTabla} id='cosas' ></img> </td>
+                        <td>Recomendaciones:</td>
                     </tr>
-                    
                     <tr>
-                        <td>Recomendaciones</td>
+                        {proyectos && proyectos.recomendacion && (
+                            <td> {proyectos.recomendacion.info1} </td>
+                        )}
                     </tr>
-                    
-                    {proyectos && proyectos.recomendacion && (
-                        <>
-                            <tr>
-                                <td>{proyectos.recomendacion.info1}</td>
-                            </tr>
-                            <tr>
-                                <td>{proyectos.recomendacion.info2}</td>
-                            </tr>
-                            <tr>
-                                <td>{proyectos.recomendacion.info3}</td>
-                            </tr>
-                        </>
-                    )}
                     <tr>
-                        <td> {proyectos.nombre} </td>
+                        {proyectos && proyectos.recomendacion && (
+                            <td> {proyectos.recomendacion.info2} </td>
+                        )}
                     </tr>
+                    <tr> 
+                        {proyectos && proyectos.recomendacion && (
+                        <td> {proyectos.recomendacion.info3} </td>
+                    )} </tr>
+                    <tr> {proyectos.nombre} </tr>
                 </tbody>
             </table>
         </div>

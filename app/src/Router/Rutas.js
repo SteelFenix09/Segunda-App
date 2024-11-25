@@ -4,6 +4,8 @@ import Sabrita from '../Aplicacion/Sabrita/Sabrita'
 import Menu from '../Aplicacion/Menu'
 import Lista from '../Aplicacion/Lista'
 import Contenido from '../Aplicacion/Contenido/Contenido'
+import Refrescos from '../Aplicacion/Refrescos/Refrescos'
+import Galletas from '../Aplicacion/Galletas/Galletas'
 
 function Rutas() {
     return (
@@ -13,6 +15,8 @@ function Rutas() {
                 <Route path='/sabrita' element={< Sabrita/>} />
                 <Route path='/lista' element={<Lista/>}/>
                 <Route path='/producto/:id' element={<Contenido/>}/>
+                <Route path='/bebidas' element={<Refrescos/>}/>
+                <Route path='/galleta' element={<Galletas/>}/>
             </Routes>
         </div>
     )

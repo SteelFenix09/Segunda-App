@@ -2,16 +2,95 @@
   text-align: center;
 }
 
-form{
-  width: 300px;
+.navbar {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: rgba(216, 198, 233, 0.558);
+  border-radius: 15px;
+}
+
+navbar-collapse {
+  font-size: 20px;
+}
+
+d-flex ms-auto{
+  position: relative;
+  left: 520px;
+}
+navbar-brand{
+  margin-left: 500px;
+}
+
+form {
+  width: 400px;
   padding: 16px;
   border-radius: 10px;
   margin: auto;
-  background-color: #ccc;
+  background-color: rgb(196, 158, 231);
 }
 
-form label{
+form label {
   width: 72px;
   font-weight: bold;
   display: inline-block;
+  
+}
+
+.nav-item_dropdown {
+  margin-right: 2800px;
+  background-color: #00000000;
+  width: 500px;
+  padding: 08px;
+
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  /* Opcional, ajusta los márgenes internos */
+  background-color: #00000000;
+  position: fixed;
+  top: -3;
+  height: 100%;
+  background-color: #343a4000;
+  /* Gris oscuro */
+  color: rgba(255, 255, 255, 0);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  /* Transición suave */
+  padding: 20px;
+
+}
+
+/* Estilo opcional para espaciado entre opciones */
+.dropdown-item {
+  margin: 0 5px;
+  /* Espaciado horizontal */
+  white-space: nowrap;
+  /* Evita que el texto se divida en líneas */
+  border: #00000000;
+}
+
+
+Footer {
+  background-color: rgba(216, 198, 233, 0.558);
+  margin-top: auto;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 15px;
+}
+
+.mb-0 {
+  font-size: 19px;
+  text-align: center;
+  color: black;
+}
+
+.text-decoration-none {
+  color: black;
+  margin-top: 10px;
 }
