@@ -13,7 +13,7 @@ function Contenido() {
     useEffect(() => {
         const obtenerSabrita = async () => {
             try {
-                const responde = await axios.get(`/proyectos/${id}`);
+                const responde = await axios.get(`/proyecto/${id}`);
                 setProyectos(responde.data);
             } catch (error) {
                 console.error('Error al obtener datos', error);
