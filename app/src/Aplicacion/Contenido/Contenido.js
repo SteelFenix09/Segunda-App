@@ -23,19 +23,18 @@ function Contenido() {
     }, [id]);
 
     return (
-        <div>
+        <div className='Tabla1'>
             <table>
-                <tr> Tabla y recomendaciones </tr>
+                <tr className='Tabla'><strong>Tabla y recomendaciones</strong> </tr>
                 <tbody>
-                    <tr>
-                        <td> Imagen </td>
-                        <td>Tabla Nutricional</td>
-                        <td> <Link to={proyectos.direccion} >Regresar</Link> </td>
+                    <tr className='ConTabla'>
+                        <td></td>
+                        <td><h3><strong>Tabla Nutricional</strong></h3></td>
                     </tr>
-                    <tr>
+                    <tr className='img'>
                         <td rowSpan={4}> <img src={proyectos.im} alt={proyectos.nombre} ></img> </td>
                         <td rowSpan={4}> <img src={proyectos.infoTabla} id='cosas' ></img> </td>
-                        <td>Recomendaciones:</td>
+                        <td><h3><strong> Recomendaciones: </strong></h3></td>
                     </tr>
                     <tr>
                         {proyectos && proyectos.recomendacion && (
@@ -52,6 +51,9 @@ function Contenido() {
                         <td> {proyectos.recomendacion.info3} </td>
                     )} </tr>
                     <tr> {proyectos.nombre} </tr>
+                    <tr>
+                    <td> <Link to={proyectos.direccion} > Regresar </Link> </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

@@ -1,0 +1,107 @@
+body{
+    background-image: url(./Img/Nutri13.jpg);
+    width: 1610px;
+    height: 2310;
+}
+.manipulacio {
+    width: 630px;
+    height: 590px;
+    margin-right: 70px;
+}
+
+.text {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fe3737;
+}
+
+.encabezado {
+    color: rgb(110, 154, 207);
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+.text-nutri {
+    font-size: 21px;
+    margin-right: 100px;
+    text-align: justify;
+
+}
+
+.buton {
+    background-color: rgba(196, 158, 231, 0);
+    /* Color de fondo del botón */
+    color: rgb(16, 13, 13);
+    /* Color del texto del botón */
+    border: none;
+    border-radius: 10px;
+    padding: 05px 06px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 1px;
+
+    cursor: pointer;
+}
+
+.buton:hover {
+    background-color: rgb(176, 116, 233)
+    /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+.tit-inici {
+    text-align: center;
+    margin-top: 50px;
+    color:rgb(110, 154, 207);
+    font-size: 55px;
+}
+.text1{
+    font-size: 20px;
+    margin-left: 230px;
+    margin-top: 25px;
+    margin-top: 50px;
+}
+
+#espacio {
+    width: 30%;
+}
+.textNut{
+    font-size: 21px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.Tit{
+    text-align: center;
+    font-size: 60px;
+    color:rgb(110, 154, 207);
+}
+.TextNutrion{
+    font-size: 21px;
+    margin-left: 250px;
+    margin-right: 200px;
+    margin-top: 30px;
+    text-align: center
+}
+
+.contenedor-grande {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    background-color: #a0d1f0;
+}
+
+.contenedor-mediano {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    background-color: #d1a0f0;
+}
+
+.contenedor-pequeno {
+    display: block;
+    font-size: 14px;
+    background-color: #f0a0d1;
+}
+

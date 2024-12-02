@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import '../Galletas/Productos.css'
 
 function Refrescos() {
 
@@ -22,12 +23,12 @@ function Refrescos() {
     const refresco = sobres.filter(pro => pro.id >= 4 && pro.id <= 6)
 
     return (
-        <div>
+        <div className='Products1'>
             <table>
                 <tbody>
-                    <tr>
+                    <tr >
                         {refresco.map((pro, index) => (
-                            <td key={pro.id}> <img src={pro.imagen} alt={pro.nombre} ></img> </td>
+                            <td key={pro.id} > <img src={pro.imagen} alt={pro.nombre} ></img> </td>
                         ))}
                     </tr>
                     <tr>
@@ -37,7 +38,7 @@ function Refrescos() {
                     </tr>
                     <tr>
                         {refresco.map((pro, index) => (
-                            <td key={pro.id}  > <Link to={`/producto/${pro.id}`} > Mas informacion </Link> </td>
+                            <td key={pro.id}  > <Link to={`/producto/${pro.id}`} >¡Mas...!</Link> </td>
                         ))}
                     </tr>
                 </tbody>

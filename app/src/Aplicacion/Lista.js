@@ -39,7 +39,7 @@ function Lista() {
                     </tr>
                     <tr>
                         {elFiltro.map((pro, index)=>(
-                            <td key={pro.id}  > <Link to={`/producto/${pro.id}`} > Mas informacion </Link> </td>
+                            <td key={pro.id}  > <Link to={`/producto/${pro.id}`} > ¡Mas...! </Link> </td>
                         ))}
                     </tr>
                 </tbody>

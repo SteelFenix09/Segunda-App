@@ -20,7 +20,7 @@ function Menu() {
                     <Link className='navbar-brand' to="/Nosotros"><h1><strong>NUTRIONFACT </strong></h1></Link>
                     <form class="d-flex ms-auto" role="search" onSubmit={Buscar} >
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={searchText} onChange={(e) => setSearchText(e.target.value)} />
-                        <button class="btn btn-outline-success" type="submit"    >Search</button>
+                        <button class="btn btn-outline-success" type="submit"    > Search </button>
                     </form>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@ function Menu() {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="/iniciativa"><h5>Iniciativa</h5></Link>
+                                <Link className="nav-link" to="/iniciativa"><h5> Iniciativa </h5></Link>
                             </li>
                             <li className="nav-item_dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,17 +44,17 @@ function Menu() {
                                         </li>
                                         <li>
                                             <Link className="dropdown-item text-center" to="/sabrita">
-                                                <strong>Sabritas</strong>
+                                                <strong> -Sabritas</strong>
                                             </Link>
                                         </li>
                                         <li>
                                             <Link className="dropdown-item text-center" to="/bebidas">
-                                                <strong>Bebidas</strong>
+                                                <strong> -Bebidas</strong>
                                             </Link>
                                         </li>
                                         <li>
                                             <Link className="dropdown-item text-center" to="/galleta">
-                                                <strong>Galletas</strong>
+                                                <strong> -Galletas</strong>
                                             </Link>
                                         </li>
                                     </ul>

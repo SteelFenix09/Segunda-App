@@ -6,18 +6,30 @@ import Lista from '../Aplicacion/Lista'
 import Contenido from '../Aplicacion/Contenido/Contenido'
 import Refrescos from '../Aplicacion/Refrescos/Refrescos'
 import Galletas from '../Aplicacion/Galletas/Galletas'
+import Footer from '../Aplicacion/Footer'
+import Iniciativa from '../Aplicacion/Iniciativa'
+import MasIniciativa from '../Aplicacion/MasIniciativa'
+import NutrionsFacts from '../Aplicacion/NutrionsFacts'
 
 function Rutas() {
     return (
         <div>
             <Menu/>
+            
+            
             <Routes>
+            <Route path='/iniciativa' element={<Iniciativa />} />
+                <Route path='/mas' element={<MasIniciativa />} />
+                <Route path='/Nosotros' element={<NutrionsFacts />} />
+
+
                 <Route path='/sabrita' element={< Sabrita/>} />
                 <Route path='/lista' element={<Lista/>}/>
                 <Route path='/producto/:id' element={<Contenido/>}/>
                 <Route path='/bebidas' element={<Refrescos/>}/>
                 <Route path='/galleta' element={<Galletas/>}/>
             </Routes>
+            <Footer/>
         </div>
     )
 }
