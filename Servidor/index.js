@@ -11,42 +11,42 @@ const buildPath = path.join(__dirname, '..', 'app', 'build')
 
 const productos = [
     {
-        id: 1, nombre: "Doritos", imagen: "/img/Sabritas/Pizee.png",im: "/img/Sabritas/Pizee.png", direccion: "/sabrita", infoTabla: "/img/Sabritas/Tabla1.jpg", recomendacion: {
+        id: 1, nombre: " Doritos: Forma triangular y su variedad de sabores intensos", imagen: "/img/Sabritas/Pizee.png",im: "/img/Sabritas/Piz1.png", direccion: "/sabrita", infoTabla: "/img/Sabritas/Tabla1.jpg", recomendacion: {
             info1: "Es fácil dejarse llevar por el sabor, pero intenta controlar las porciones para evitar un consumo excesivo de grasas y sodio.",
             info2: "Inclúyelas en una dieta variada y equilibrada, combinándolas con frutas, verduras y proteínas.",
             info3: "Antes de consumirlas, revisa la información nutricional para conocer el contenido de calorías, grasas, sodio y otros nutrientes."
         }
     },
     {
-        id: 2, nombre: "Rufles", imagen: "/img/Sabritas/Rufles.png",im: "/img/Sabritas/Rufles.png", direccion: "/sabrita", infoTabla: "/img/Sabritas/Tabla2.jpg", recomendacion: {
+        id: 2, nombre: " Rufles: Textura crujiente y forma de ondas", imagen: "/img/Sabritas/Rufles.png",im: "/img/Sabritas/Rufl1.png", direccion: "/sabrita", infoTabla: "/img/Sabritas/Tabla2.jpg", recomendacion: {
             info1: "..",
             info2: "..",
             info3: ".."
         }
     },
     {
-        id: 3, nombre: "Chetos", imagen: "/img/Sabritas/torci.png",im: "/img/Sabritas/torci.png", direccion: "/sabrita", infoTabla: "/img/Sabritas/Tabla3.jpg", recomendacion: {
+        id: 3, nombre: " Forma retorcida y su sabor distintivo a queso", imagen: "/img/Sabritas/torci.png",im: "/img/Sabritas/torci1.png", direccion: "/sabrita", infoTabla: "/img/Sabritas/Tabla3.jpg", recomendacion: {
             info1: "Hola1",
             info2: "Hola3",
             info3: "Hola2"
         }
     },
     {
-        id: 4, nombre: "Pepesi", imagen: "/img/Refrescos/Nutri8.png",im: "/img/Refrescos/Nutri2.png", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla4.jpg", recomendacion: {
+        id: 4, nombre: "Pepesi: Mezcla de agua carbonatada, azúcar, cafeína, colorante caramelo, ácido fosfórico, y aromas naturales.", imagen: "/img/Refrescos/Nutri8.png",im: "/img/Refrescos/Nutri2.png", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla4.jpg", recomendacion: {
             info1: "Hola1",
             info2: "Hola3",
             info3: "Hola2"
         }
     },
     {
-        id: 5, nombre: "Sprite", imagen: "/img/Refrescos/Nutri7.png",im: "/img/Refrescos/sponch.jpg", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla5.jpg", recomendacion: {
+        id: 5, nombre: "Sprite: Gaseosa sin cafeína, con sabor a limón y lima", imagen: "/img/Refrescos/Nutri7.png",im: "/img/Refrescos/sponch.jpg", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla5.jpg", recomendacion: {
             info1: "Hola1",
             info2: "Hola3",
             info3: "Hola2"
         }
     },
     {
-        id: 6, nombre: "Jumex", imagen: "/img/Refrescos/Nutri10.png",im: "/img/Refrescos/sponch.jpg", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla6.jpg", recomendacion: {
+        id: 6, nombre: "Jumex: Néctares, bebidas sin gas, y opciones bajas en azúcar o enriquecidas con vitaminas.", imagen: "/img/Refrescos/Nutri10.png",im: "/img/Refrescos/sponch.jpg", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla6.jpg", recomendacion: {
             info1: "Hola1",
             info2: "Hola3",
             info3: "Hola2"
