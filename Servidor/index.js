@@ -25,14 +25,14 @@ const productos = [
         }
     },
     {
-        id: 3, nombre: " Forma retorcida y su sabor distintivo a queso", imagen: "/img/Sabritas/torci.png",im: "/img/Sabritas/torci1.png", direccion: "/sabrita", infoTabla: "/img/Sabritas/Tabla3.jpg", recomendacion: {
+        id: 3, nombre: "Cheto: Forma retorcida y su sabor distintivo a queso", imagen: "/img/Sabritas/torci.png",im: "/img/Sabritas/torci1.png", direccion: "/sabrita", infoTabla: "/img/Sabritas/Tabla3.jpg", recomendacion: {
             info1: "Hola1",
             info2: "Hola3",
             info3: "Hola2"
         }
     },
     {
-        id: 4, nombre: "Pepesi: Mezcla de agua carbonatada, azúcar, cafeína, colorante caramelo, ácido fosfórico, y aromas naturales.", imagen: "/img/Refrescos/Nutri8.png",im: "/img/Refrescos/Nutri2.png", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla4.jpg", recomendacion: {
+        id: 4, nombre: "Pepsi: Mezcla de agua carbonatada, azúcar, cafeína, colorante caramelo, ácido fosfórico, y aromas naturales.", imagen: "/img/Refrescos/Nutri10.png",im: "/img/Refrescos/Nutri2.png", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla4.jpg", recomendacion: {
             info1: "Hola1",
             info2: "Hola3",
             info3: "Hola2"
@@ -46,7 +46,7 @@ const productos = [
         }
     },
     {
-        id: 6, nombre: "Jumex: Néctares, bebidas sin gas, y opciones bajas en azúcar o enriquecidas con vitaminas.", imagen: "/img/Refrescos/Nutri10.png",im: "/img/Refrescos/sponch.jpg", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla6.jpg", recomendacion: {
+        id: 6, nombre: "Jumex: Néctares, bebidas sin gas, y opciones bajas en azúcar o enriquecidas con vitaminas.", imagen: "/img/Refrescos/Nutri8.png",im: "/img/Refrescos/sponch.jpg", direccion: "/bebidas", infoTabla: "/img/Refrescos/Tabla6.jpg", recomendacion: {
             info1: "Hola1",
             info2: "Hola3",
             info3: "Hola2"
