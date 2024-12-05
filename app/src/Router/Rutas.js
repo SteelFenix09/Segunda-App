@@ -11,6 +11,8 @@ import Iniciativa from '../Aplicacion/Iniciativa'
 import MasIniciativa from '../Aplicacion/MasIniciativa'
 import NutrionsFacts from '../Aplicacion/NutrionsFacts'
 
+import Editar from '../Aplicacion/Editar'
+
 function Rutas() {
     return (
         <div>
@@ -28,6 +30,7 @@ function Rutas() {
                 <Route path='/producto/:id' element={<Contenido/>}/>
                 <Route path='/bebidas' element={<Refrescos/>}/>
                 <Route path='/galleta' element={<Galletas/>}/>
+                <Route path='/editar' element={<Editar/>}/>
             </Routes>
             <Footer/>
         </div>
